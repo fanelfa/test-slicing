@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav{
+    max-width: 1300px;
+    margin: 3px auto 0;
+    .logo{
+        cursor: pointer;
+        img{
+            height: 62px;
+        }
+    }
+    .menu{
+        column-gap: 5px;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 23px 0;
+        list-style: none;
+        margin: 0;
+        .item{
+            padding: 10px 17px;
+            font-weight: 500;
+            cursor: pointer;
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            &.active, &:hover{
+                background-color: #204E9D;
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.big{
+    max-width: 1300px;
+    margin: 0 auto;
+
+    position: relative;
+    img{
+        height: 513px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        background-color: rgba(#132D5A, .80);
+        p{
+            margin-left: 80px;
+            font-size: 60px;
+            max-width: 851px;
+        }
+    }
+}
+
+.programs{
+    max-width: 1300px;
+    margin: 50px auto 100px;
+    .col{
+        padding: 0 10px;
+    }
+    .col:first-child{
+        padding-left: 0;
+    }
+
+    .col:last-child{
+        padding-right: 0;
+    }
+}
+
+.program{
+    height: 249px;
+    img{
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    .overlay{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#2B2A2A, .70);
+
+        .title{
+            font-size: 30px;
+            max-width: 100%;
+            padding-left: 18px;
+        }
+        .action{
+            font-size: 12px;
+            line-height: 12px;
+            padding: 21px 18px 31px;
+            svg{
+                height: 15px;
+            }
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        .overlay{
+            background-color: rgba(#132D5A, .80);
+        }
+    }
+}

@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav {
+  max-width: 1300px;
+  margin: 3px auto 0;
+}
+.nav .logo {
+  cursor: pointer;
+}
+.nav .logo img {
+  height: 62px;
+}
+.nav .menu {
+  column-gap: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 23px 0;
+  list-style: none;
+  margin: 0;
+}
+.nav .menu .item {
+  padding: 10px 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav .menu .item a {
+  text-decoration: none;
+  color: black;
+}
+.nav .menu .item.active, .nav .menu .item:hover {
+  background-color: #204E9D;
+}
+.nav .menu .item.active a, .nav .menu .item:hover a {
+  color: white;
+}
+
+.big {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+.big img {
+  height: 513px;
+  width: 100%;
+  object-fit: cover;
+}
+.big .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  background-color: rgba(19, 45, 90, 0.8);
+}
+.big .overlay p {
+  margin-left: 80px;
+  font-size: 60px;
+  max-width: 851px;
+}
+
+.programs {
+  max-width: 1300px;
+  margin: 50px auto 100px;
+}
+.programs .col {
+  padding: 0 10px;
+}
+.programs .col:first-child {
+  padding-left: 0;
+}
+.programs .col:last-child {
+  padding-right: 0;
+}
+
+.program {
+  height: 249px;
+}
+.program img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.program .overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 42, 42, 0.7);
+}
+.program .overlay .title {
+  font-size: 30px;
+  max-width: 100%;
+  padding-left: 18px;
+}
+.program .overlay .action {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 21px 18px 31px;
+}
+.program .overlay .action svg {
+  height: 15px;
+}
+.program:hover {
+  cursor: pointer;
+}
+.program:hover .overlay {
+  background-color: rgba(19, 45, 90, 0.8);
+}
+
+/*# sourceMappingURL=index.css.map */
